@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservations & Waitlist</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center"><span class="fa fa-fire"> </span>Hot Restaurant</h1>
+            <hr>
+            <h2 class="text-center"> Current Reservations and Waiting List </h2>
+            <br>
+            <div class="text-center">
+                <button class="btn btn-lrg btn-danger">
+                    <span class="fa fa-credit-card"></span>
+                    Make Reservation </button>
+
+                <button class="btn btn-lrg btn-secondary">
+                    <span class="fa fa-home"></span>
+                </button>
+            </div>
+        </div> <!-- end of jumbotron -->
+
+
+
+
+        <div class="jumbotron">
+            <!-- start new jumbotron -->
+            <!-- big card for reservations -->
+            <div class="card w-75 p-3">
+
+                <p class="card-title bg-secondary">Current Reservations</p>
+
+                <!-- first table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title border-bottom">Table #1</h3>
+
+                        <div class="card-text">
+                            <ul style="list-style-type:none;">
+                                <!-- list-style-type: none;-->
+                                <li id="table1">ID #:</li>
+                                <li id="name1">Name:</li>
+                                <li id="email1">EMail:</li>
+                                <li id="phone1">Phone:</li>
+                            </ul>
+                        </div> <!-- end of table 1 text -->
+                    </div> <!-- end of table 1 body -->
+                </div> <!-- end of table 1 card -->
+
+                <!-- second table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title border-bottom">Table #2</h3>
+                        <div class="card-text">
+                            <ul style="list-style-type:none;">
+                                <li id="table2">ID #:</li>
+                                <li id="name2">Name:</li>
+                                <li id="email2">EMail:</li>
+                                <li id="phone2">Phone:</li>
+                            </ul>
+                        </div> <!-- end of table 2 text -->
+                    </div> <!-- end of table 2 body -->
+                </div> <!-- end of table 2 card -->
+
+                <!-- third table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title border-bottom">Table #3</h3>
+                        <div class="card-text">
+                            <ul style="list-style-type:none;">
+                                <li id="table3">ID #:</li>
+                                <li id="name3">Name:</li>
+                                <li id="email3">EMail:</li>
+                                <li id="phone3">Phone:</li>
+                            </ul>
+                        </div> <!-- end of table 3 text -->
+                    </div> <!-- end of table 3 body -->
+                </div> <!-- end of table 3 card -->
+
+                <!-- fourth table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title border-bottom">Table #4</h3>
+                        <div class="card-text">
+                            <ul style="list-style-type:none;">
+                                <li id="table4">ID #:</li>
+                                <li id="name4">Name:</li>
+                                <li id="email4">EMail:</li>
+                                <li id="phone4">Phone:</li>
+                            </ul>
+                        </div> <!-- end of table 4 text -->
+                    </div> <!-- end of table 4 body -->
+                </div> <!-- end of table 4 card -->
+
+                <!-- fifth table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title border-bottom">Table #5</h3>
+                        <div class="card-text">
+                            <ul style="list-style-type:none;">
+                                <li id="table5">ID #:</li>
+                                <li id="name5">Name:</li>
+                                <li id="email5">EMail:</li>
+                                <li id="phone5">Phone:</li>
+                            </ul>
+                        </div> <!-- end of table 5 text -->
+                    </div> <!-- end of table 5 body -->
+                </div> <!-- end of table 5 card -->
+
+            </div> <!-- end of reservations card -->
+
+
+            <!-- big card for waitlist -->
+            <div class="card w-75 p-3 mt-3">
+
+                <p class="card-title bg-secondary">Waiting list</p>
+
+                <!-- first table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title border-bottom">Table #1</h3>
+
+                        <div class="card-text">
+                            <ul style="list-style-type:none;">
+                                <!-- list-style-type: none;-->
+                                <li id="table1">ID #:</li>
+                                <li id="name1">Name:</li>
+                                <li id="email1">EMail:</li>
+                                <li id="phone1">Phone:</li>
+                            </ul>
+                        </div> <!-- end of table 1 text -->
+                    </div> <!-- end of table 1 body -->
+                </div> <!-- end of table 1 card -->
+
+                <!-- second table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title border-bottom">Table #2</h3>
+                        <div class="card-text">
+                            <ul style="list-style-type:none;">
+                                <li id="table2">ID #:</li>
+                                <li id="name2">Name:</li>
+                                <li id="email2">EMail:</li>
+                                <li id="phone2">Phone:</li>
+                            </ul>
+                        </div> <!-- end of table 2 text -->
+                    </div> <!-- end of table 2 body -->
+                </div> <!-- end of table 2 card -->
+
+                <!-- third table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title border-bottom">Table #3</h3>
+                        <div class="card-text">
+                            <ul style="list-style-type:none;">
+                                <li id="table3">ID #:</li>
+                                <li id="name3">Name:</li>
+                                <li id="email3">EMail:</li>
+                                <li id="phone3">Phone:</li>
+                            </ul>
+                        </div> <!-- end of table 3 text -->
+                    </div> <!-- end of table 3 body -->
+                </div> <!-- end of table 3 card -->
+
+                <!-- fourth table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title border-bottom">Table #4</h3>
+                        <div class="card-text">
+                            <ul style="list-style-type:none;">
+                                <li id="table4">ID #:</li>
+                                <li id="name4">Name:</li>
+                                <li id="email4">EMail:</li>
+                                <li id="phone4">Phone:</li>
+                            </ul>
+                        </div> <!-- end of table 4 text -->
+                    </div> <!-- end of table 4 body -->
+                </div> <!-- end of table 4 card -->
+
+                <!-- fifth table -->
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title border-bottom">Table #5</h3>
+                        <div class="card-text">
+                            <ul style="list-style-type:none;">
+                                <li id="table5">ID #:</li>
+                                <li id="name5">Name:</li>
+                                <li id="email5">EMail:</li>
+                                <li id="phone5">Phone:</li>
+                            </ul>
+                        </div> <!-- end of table 5 text -->
+                    </div> <!-- end of table 5 body -->
+                </div> <!-- end of table 5 card -->
+
+            </div> <!-- end of reservations card -->
+
+
+
+        </div> <!-- end of jumbotron-->
+
+        <footer class="footer">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="nav nav-pills">
+                        <li class="clear-list">
+                            <a class="nav-link" href="#">Clear Table</a>
+                        </li>
+ 
+                        <li class="nav-item">
+                            <p class="nav-link disabled" href="#"> | </p>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">API Table Link</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <p class="nav-link disabled" href="#"> | </p>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">API Wait List</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- end of container-->
+</body>
+
+</html>
