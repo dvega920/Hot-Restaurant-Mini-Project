@@ -16,13 +16,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Empty Array of objects: 
-var reservation = [
+var reservation = [];
 
-];
-
-var waitList = [
-
-];
+var waitList = [];
 
 // Express Routes
 app.get("/", function (req, res) {
