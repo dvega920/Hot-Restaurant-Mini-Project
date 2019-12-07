@@ -1,12 +1,32 @@
-let resObj = {
-    id: id,
-    name: name,
-    email: email,
-    phone: phone,
-    table: table,  // table number if have a reservation (0 if no reservation)
-    waitList: waitlist  // # on waitlist if on waitlist (0 if not on waitlist)
-    
+class ReservationObj {
+  // create Employee object given the name, id & email
+  constructor(id, name, email, phone) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+    this.phone = phone;
+  }
 }
 
-// array of resObj objects
-let reservations = [];
+// reservations will be an array of Reservation Objects
+// let reservations = [];
+
+// use
+// const reservation = new ReservationObj(id, name, email, phone);
+// to create new obj and
+// push.reservations(reservation);
+//   to add it to the reservations.
+
+// similarly with waitlist
+
+class WaitlistObj {
+  constructor(id, name, email, phone) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+    this.phone = phone;
+  };
+};
+
+// waitlist will be an array of WaitlistObj Objects
+// let waitlist = [];
